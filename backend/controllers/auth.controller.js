@@ -15,7 +15,7 @@ export const sighUp=async (req,res) => {
         res.cookie("token",token,{
             httpOnly:true,
             secure:true,
-            sameSite: "n",
+            sameSite: "none",
             maxAge: 7 * 24 * 60 * 60 * 1000
 
 
